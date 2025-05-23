@@ -1,0 +1,516 @@
+{
+  "name": "Hang-Api",
+  "version": "v1.0.0",
+  "description": "Simple and easy to use API.",
+  "bannerImage": "/src/banner.jpg",
+  "header": {
+    "status": "Online!"
+  },
+  "apiSettings": {
+    "creator": "Hang-GTS", 
+    "apikey": ["Hang-Api"]
+  },
+  "categories": [
+    {
+      "name": "AI (Artificial Intelligence)",
+      "items": [
+        {
+          "name": "LuminAI",
+          "desc": "Talk with luminai",
+          "path": "/ai/luminai?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for luminai to respond to"
+          }
+        },
+       {
+          "name": "HydroMind",
+          "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
+          "path": "/ai/hydromind?text=&model=",
+          "status": "ready",
+          "params": {
+            "text": "Teks atau perintah untuk chat AI",
+            "model":"1See the list of supported AI models here: https://mind.hydrooo.web.id"
+          }
+         },
+                 {
+          "name": "OpenAI",
+          "desc": "openai chat",
+          "path": "/ai/openai?text=",
+          "status": "ready",
+          "params": {
+            "text": "Masukan pertanyaan atau text"
+          }
+        },
+       {
+          "name": "deepseek",
+          "desc": "deepseek AI",
+          "path": "/ai/deepseek?text=&model=",
+          "status": "ready",
+          "params": {
+            "text": "Teks atau perintah untuk deepseek AI"
+          }
+         }   
+      ]
+    },
+     {
+      "name": "Downloader",
+      "items": [
+        {
+          "name": "Aio",
+          "desc": "All in downloader",
+          "path": "/download/aio?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url"
+          }
+        },       
+        {
+          "name": "Tiktok",
+          "desc": "Downloader tiktok",
+          "path": "/download/tiktok?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Tiktok"
+          }
+        }, 
+        {
+          "name": "Tiktok V2",
+          "desc": "Downloader tiktok v2",
+          "path": "/download/tiktok-v2?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Tiktok"
+          }
+        },       
+        {
+          "name": "Twitter",
+          "desc": "Downloader twitter",
+          "path": "/download/twitter?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Twitter"
+          }
+        },         
+        {
+          "name": "Facebook",
+          "desc": "Downloader facebook",
+          "path": "/download/facebook?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Facebook"
+          }
+        }, 
+        {
+          "name": "Ytdl",
+          "desc": "Downloader youtube",
+          "path": "/download/ytdl?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Youtube"
+          }
+        }, 
+        {
+          "name": "Ytmp3",
+          "desc": "Downloader youtube mp3",
+          "path": "/download/ytmp3?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Untuk Mendownload Audio YT"
+          }
+        },        
+        {
+          "name": "Ytmp4",
+          "desc": "Downloader youtube mp4",
+          "path": "/download/ytmp4?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Untuk mendownload Video YT"
+          }
+        },        
+        {
+          "name": "Ytdl V2",
+          "desc": "Downloader youtube v2",
+          "path": "/download/ytdl-v2?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url"
+          }
+        },
+        {
+          "name": "Instagram",
+          "desc": "Downloader instagram",
+          "path": "/download/instagram?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Instagram Yang Valid"
+          }
+        }, 
+        {
+          "name": "Pinterest",
+          "desc": "Downloader pinterest",
+          "path": "/download/pinterest?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Pinterest"
+          }
+        }, 
+        {
+          "name": "Snackvideo",
+          "desc": "Downloader snackvideo",
+          "path": "/download/snackvideo?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }, 
+        {
+          "name": "Soundcloud",
+          "desc": "Downloader soundcloud",
+          "path": "/download/soundcloud?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }, 
+        {
+          "name": "Terabox",
+          "desc": "Downloader terabox",
+          "path": "/download/terabox?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }, 
+        {
+          "name": "XNXX",
+          "desc": "Downloader xnxx",
+          "path": "/download/xnxx?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }, 
+        {
+          "name": "9xbuddy",
+          "desc": "All in downloader",
+          "path": "/download/9xbuddy?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }, 
+        {
+          "name": "Spotify",
+          "desc": "Downloader spotify",
+          "path": "/download/spotify?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }, 
+        {
+          "name": "Capcut",
+          "desc": "Downloader capcut",
+          "path": "/download/capcut?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        },         
+        {
+          "name": "Play Spotify",
+          "desc": "Play spotify music",
+          "path": "/download/playspotify?q=",
+          "status": "ready",
+          "params": {
+            "q": "Masukan Judul Lagu Yang Valid"
+          }
+        }, 
+        {
+          "name": "Gdrive",
+          "desc": "Downloader google drive",
+          "path": "/download/gdrive?url=", 
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }, 
+        {
+          "name": "Videy",
+          "desc": "Downloader videy",
+          "path": "/download/videy?url=", 
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }, 
+        {
+          "name": "Doodstream",
+          "desc": "Downloader doodstream",
+          "path": "/download/doodstream?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }        
+      ]
+    },
+    {
+      "name": "Image Creator",
+      "items": [
+        {
+          "name": "Remini",
+          "desc": "Remini image",
+          "path": "/imagecreator/remini?url=",
+          "status": "Ready",
+          "params": {
+            "url": "Masukan Url Berformat png/jpg!"
+          }
+        }, 
+        {
+          "name": "Removebg",
+          "desc": "Remove background image",
+          "path": "/imagecreator/removebg?url=",
+          "status": "Ready",
+          "params": {
+            "url": "Masukan Url Berformat png/jpg!"
+          }
+        }, 
+        {
+          "name": "Upscale",
+          "desc": "Upscale image",
+          "path": "/imagecreator/upscale?url=",
+          "status": "Ready",
+          "params": {
+            "url": "Masukan Url Berformat png/jpg!"
+          }
+        }, 
+        {
+          "name": "Colorize",
+          "desc": "Colorize image",
+          "path": "/imagecreator/colorize?url=",
+          "status": "Ready",
+          "params": {
+            "url": "Masukan Url Berformat png/jpg!"
+          }
+        }, 
+        {
+          "name": "Brat",
+          "desc": "Brat text generator",
+          "path": "/imagecreator/brat?text=",
+          "status": "Ready",
+          "params": {
+            "text": "Masukan Text"
+          }
+        }                                 
+      ]
+    }, 
+    {
+      "name": "Orderkuota Gateway",
+      "items": [
+        {
+          "name": "Create Payment",
+          "desc": "Create qris payment", 
+          "path": "/orderkuota/createpayment?apikey=&amount=&codeqr=", 
+          "status": "ready",
+          "innerDesc": "Buy apikey >> wa.me/628386890336"
+        },
+        {
+          "name": "Cek Status",
+          "desc": "Cek status payment", 
+          "path": "/orderkuota/cekstatus?apikey=&merchant=&keyorkut=", 
+          "status": "ready",
+          "innerDesc": "Buy apikey >> wa.me/628386890336"          
+        }
+      ]
+    },
+    {
+      "name": "Random",
+      "items": [
+        {
+          "name": "Blue Archive",
+          "desc": "Blue Archive Random Images",
+          "path": "/random/ba",
+          "status": "ready"
+        },
+        {
+          "name": "Random Elana",
+          "desc": "Random Elaina Images",
+          "path": "/random/elaina",
+          "status": "ready"
+        },
+        {
+          "name": "Random Waifu",
+          "desc": "Random foto waifu",
+          "path": "/random/waifu", 
+          "status": "ready"
+        }, 
+        {
+          "name": "Random Nsfw",
+          "desc": "Random foto nsfw",
+          "path": "/random/nsfw",
+          "status": "ready"
+        }, 
+        {
+          "name": "Pap Ayang",
+          "desc": "Random pap ayang",
+          "path": "/random/papayang", 
+          "status": "ready"
+        }           
+      ]
+    },
+    { 
+      "name": "Search",
+      "items": [
+        {
+          "name": "Youtube Search",
+          "desc": "Search youtube",
+          "path": "/search/youtube?q=",
+          "status": "ready"
+        }, 
+        {
+          "name": "Pinterest",
+          "desc": "Search foto pinterest",
+          "path": "/search/pinterest?q=",
+          "status": "ready"
+        }, 
+        {
+          "name": "Google Image",
+          "desc": "Search foto google",
+          "path": "/search/gimage?q=",
+          "status": "ready"
+        }, 
+        {
+          "name": "Playstore",
+          "desc": "Search apk playstore",
+          "path": "/search/playstore?q=",
+          "status": "ready"
+        }, 
+        {
+          "name": "Npm Search",
+          "desc": "Search npm nodejs",
+          "path": "/search/npm?q=",
+          "status": "ready"
+        },        
+        {
+          "name": "Fdroid",
+          "desc": "Search apk fdroid",
+          "path": "/search/fdroid?q=",
+          "status": "ready"
+        },    
+        {
+          "name": "Happymod",
+          "desc": "Search apk happymod",
+          "path": "/search/happymod?q=",
+          "status": "ready"
+        },           
+        {
+          "name": "Tiktok",
+          "desc": "Search tiktok video",
+          "path": "/search/tiktok?q=",
+          "status": "ready"
+        }, 
+        {
+          "name": "XNXX Search",
+          "desc": "Search xnxx video",
+          "path": "/search/xnxx?q=",
+          "status": "ready"
+        }, 
+        {
+          "name": "Lyrics Search",
+          "desc": "Search lyrics music",
+          "path": "/search/lyrics?q=",
+          "status": "ready"
+        }, 
+        {
+          "name": "Sfile Search",
+          "desc": "Search url sfile mobi",
+          "path": "/search/sfile?q=",
+          "status": "ready"
+        }                                   
+      ]
+    }, 
+    {
+      "name": "Stalker",
+      "items": [
+        {
+          "name": "Npm Stalk",
+          "desc": "Stalk npm package",
+          "path": "/stalk/npm?q=",
+          "status": "ready"
+        },          
+        {
+          "name": "Instagram Stalk",
+          "desc": "Stalk Instagram account",
+          "path": "/stalk/instagram?user=",
+          "status": "ready"
+        }, 
+        {
+          "name": "Github Stalk",
+          "desc": "Stalk github account",
+          "path": "/stalk/github?user=",
+          "status": "ready"
+        },        
+        {
+          "name": "Tiktok Stalk",
+          "desc": "Stalk tiktok account",
+          "path": "/stalk/tiktok?user=",
+          "status": "ready"
+        }, 
+        {
+          "name": "Youtube Stalk",
+          "desc": "Stalk youtube account",
+          "path": "/stalk/youtube?user=",
+          "status": "ready"
+        }            
+      ]
+    },
+     {
+      "name": "Tools",
+      "items": [
+        {
+          "name": "Text-to-speech",
+          "desc": "Tts anime character",
+          "path": "/tools/text-to-speech?text=", 
+          "status": "ready"
+        }, 
+        {
+          "name": "OCR",
+          "desc": "Read text from image",
+          "path": "/tools/ocr?url=",
+          "status": "ready"
+        },        
+        {
+          "name": "Screenshot Web",
+          "desc": "Screenshot web url",
+          "path": "/tools/ssweb?url=", 
+          "status": "ready"
+        }, 
+        {
+          "name": "Emoji To Gif",
+          "desc": "Convert emoji to gif",
+          "path": "/tools/emojitogif?emoji=",
+          "status": "ready"
+        }, 
+        {
+          "name": "Emoji Mix",
+          "desc": "Emoji mix converter",
+          "path": "/tools/emojimix?emoji1=&emoji2=",
+          "status": "ready"
+        }                      
+      ]
+    },
+    {
+      "name": "API",
+      "items": [
+        {
+          "name": "Status Api",
+          "desc": "Cek Status Api",
+          "path": "/api/status",
+          "status": "ready"
+        }                        
+      ]
+    } 
+  ]
+}
