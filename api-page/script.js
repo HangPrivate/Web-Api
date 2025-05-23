@@ -86,13 +86,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
         
         // Set page content from settings
-        setContent('page', 'textContent', settings.name || "Falcon-Api");
-        setContent('wm', 'textContent', `© ${new Date().getFullYear()} ${settings.apiSettings.creator}. All rights reserved.` || `© ${new Date().getFullYear()} FlowFalcon. All rights reserved.`);
-        setContent('header', 'textContent', settings.name || "Falcon-Api");
-        setContent('name', 'textContent', settings.name || "Falcon-Api");
+        setContent('page', 'textContent', settings.name || "Hang-Api");
+        setContent('wm', 'textContent', `© ${new Date().getFullYear()} ${settings.apiSettings.creator}. All rights reserved.` || `© ${new Date().getFullYear()} Hang-GTS. All rights reserved.`);
+        setContent('header', 'textContent', settings.name || "Hang-Api");
+        setContent('name', 'textContent', settings.name || "Hang-Api");
         setContent('version', 'textContent', settings.version || "v1.0");
         setContent('versionHeader', 'textContent', settings.header.status || "Online!");
-        setContent('description', 'textContent', settings.description || "Simple and easy to use API.");
+        setContent('description', 'textContent', settings.description || "Simple Web API.");
 
         // Set banner image
         const dynamicImage = document.getElementById('dynamicImage');
