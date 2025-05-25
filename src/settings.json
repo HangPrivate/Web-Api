@@ -54,7 +54,7 @@
          {
           "name": "GPT4O",
           "desc": "GPT 4 O",
-          "path": "/ai/venicechat?text=",
+          "path": "/ai/chatgpt4o?text=",
           "status": "ready",
           "params": {
             "text": "Masukan pertanyaan atau text"
