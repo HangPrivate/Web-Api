@@ -12,8 +12,11 @@ module.exports = function(app) {
                 });
             }
 
+            // Model AI ditentukan otomatis oleh sistem (server)
+            const model = "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b";
+
             const { data } = await axios.post("https://ai.clauodflare.workers.dev/chat", {
-                model: "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b", // model ditentukan di server
+                model,
                 messages: [{
                     role: "user",
                     content: text
