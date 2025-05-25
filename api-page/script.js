@@ -27,9 +27,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         mainWrapper.classList.toggle('nav-collapsed');
     });
     
-    menuToggle.addEventListener('click', () => {
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
         sideNav.classList.toggle('active');
-    });
+        });
+    }
     
     // Close side nav when clicking outside on mobile
     document.addEventListener('click', (e) => {
