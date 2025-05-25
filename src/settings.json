@@ -33,7 +33,7 @@
             "model":"1See the list of supported AI models here: https://mind.hydrooo.web.id"
           }
          },
-                 {
+         {
           "name": "OpenAI",
           "desc": "openai chat",
           "path": "/ai/openai?text=",
@@ -42,7 +42,7 @@
             "text": "Masukan pertanyaan atau text"
           }
         },
-         {
+        {
           "name": "VeniceAi",
           "desc": "Venice AI",
           "path": "/ai/venicechat?text=",
@@ -60,15 +60,50 @@
             "text": "Masukan pertanyaan atau text"
           }
         },
+         {
+          "name": "Claude",
+          "desc": "Claude AI",
+          "path": "/ai/claude?text=",
+          "status": "ready",
+          "params": {
+            "text": "Masukan pertanyaan atau text"
+          }
+        },
        {
           "name": "deepseek",
           "desc": "deepseek AI",
-          "path": "/ai/deepseek?text=",
+          "path": "/ai/deepseek?text=&model=",
           "status": "ready",
           "params": {
             "text": "Teks atau perintah untuk deepseek AI"
           }
          }   
+      ]
+    },
+    {
+      "name": "Anime",
+      "items": [
+        {
+          "name": "Hot anime",
+          "desc": "Hot anime (animedao)",
+          "path": "/anime/hot",
+          "status": "ready"
+        },
+          {
+          "name": "Latest anime",
+          "desc": "Latest anime (animedao)",
+          "path": "/anime/latest",
+          "status": "ready"
+        },
+        {
+          "name": "Search anime",
+          "desc": "Search anime (animedao)",
+          "path": "/anime/search?query=",
+          "status": "ready",
+          "params": {
+            "query": "Masukan pertanyaan atau text"
+          }
+        }                   
       ]
     },
      {
