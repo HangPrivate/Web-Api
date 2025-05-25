@@ -45,7 +45,7 @@
        {
           "name": "deepseek",
           "desc": "deepseek AI",
-          "path": "/ai/deepseek?text=&model=",
+          "path": "/ai/deepseek?text=",
           "status": "ready",
           "params": {
             "text": "Teks atau perintah untuk deepseek AI"
