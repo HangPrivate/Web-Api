@@ -676,7 +676,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 modalRefs.submitBtn.classList.remove('d-none');
 
                 // Enhanced submit button handler
-                modalRefs.submitBtn.onclick = async () => {
+                modalRefs.submitBtn.addEventListener('click', async function handleSubmitClick() {
                     const inputs = modalRefs.queryInputContainer.querySelectorAll('input');
                     const newParams = new URLSearchParams();
                     let isValid = true;
@@ -730,7 +730,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         modalRefs.submitBtn.classList.add('d-none');
                         handleApiRequest(apiUrlWithParams, modalRefs, apiName);
                     }, 300);
-                };
+                });
                 
                 // Initialize tooltips
                 const tooltips = modalRefs.queryInputContainer.querySelectorAll('[data-bs-toggle="tooltip"]');
