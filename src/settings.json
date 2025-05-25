@@ -42,6 +42,15 @@
             "text": "Masukan pertanyaan atau text"
           }
         },
+         {
+          "name": "VeniceAi",
+          "desc": "Venice AI",
+          "path": "/ai/venicechat?text=",
+          "status": "ready",
+          "params": {
+            "text": "Masukan pertanyaan atau text"
+          }
+        },
        {
           "name": "deepseek",
           "desc": "deepseek AI",
