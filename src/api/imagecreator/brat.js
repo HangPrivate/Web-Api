@@ -2,7 +2,7 @@ module.exports = function app (app) {
 app.get('/imagecreator/brat', async (req, res) => {
         try {
             const { text } = req.query
-            const pedo = await getBuffer(`https://api.siputzx.my.id/api/m/brat?text=${nama}&isVideo=false&delay=500`)
+            const pedo = await getBuffer(`https://aqul-brat.hf.space/?text=${text}`)
             res.writeHead(200, {
                 'Content-Type': 'image/png',
                 'Content-Length': pedo.length,
