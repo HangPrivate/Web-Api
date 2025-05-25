@@ -51,6 +51,15 @@
             "text": "Masukan pertanyaan atau text"
           }
         },
+         {
+          "name": "GPT4O",
+          "desc": "GPT 4 O",
+          "path": "/ai/venicechat?text=",
+          "status": "ready",
+          "params": {
+            "text": "Masukan pertanyaan atau text"
+          }
+        },
        {
           "name": "deepseek",
           "desc": "deepseek AI",
