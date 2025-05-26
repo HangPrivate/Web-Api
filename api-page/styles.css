@@ -1,67 +1,61 @@
 :root {
-    /* Color Palette - Purple Gradient Theme */
-    --primary-color: #6c5ce7;
-    --primary-hover: #5649d1;
-    --secondary-color: #a29bfe;
-    --accent-color: #00cec9;
-    --success-color: #00b894;
-    --error-color: #ff7675;
-    --warning-color: #fdcb6e;
-    
-    /* Light Mode */
-    --background-color: #f8f9fd;
-    --card-background: #ffffff;
-    --text-color: #2d3436;
-    --text-muted: #636e72;
-    --border-color: rgba(0, 0, 0, 0.08);
-    --highlight-color: rgba(108, 92, 231, 0.1);
-    
-    /* UI Elements */
-    --border-radius-sm: 8px;
-    --border-radius: 12px;
-    --border-radius-lg: 20px;
-    --shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    --hover-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    
-    /* Animation */
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    --hover-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    --hover-transform: translateY(-5px);
-    
-    /* Spacing */
-    --space-xs: 4px;
-    --space-sm: 8px;
-    --space-md: 16px;
-    --space-lg: 24px;
-    --space-xl: 32px;
-    --space-xxl: 48px;
-    
-    /* Layout */
-    --side-nav-width: 250px;
-    --side-nav-collapsed: 70px;
-    --header-height: 70px;
-    
-    /* Background values for rgba */
-    --background-color-rgb: 248, 249, 253;
+  --primary-color: #4B6CB7;
+  --primary-hover: #3B4781;
+  --secondary-color: #B98EFF;
+  --accent-color: #8E54E9;
+  --success-color: #00b894;
+  --error-color: #ff7675;
+  --warning-color: #fdcb6e;
+
+  --background-color: #ffffff;
+  --card-background: #f4f6ff;
+  --text-color: #1a1a2e;
+  --text-muted: #666f8a;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --highlight-color: rgba(75, 108, 183, 0.15);
+
+  --border-radius-sm: 8px;
+  --border-radius: 12px;
+  --border-radius-lg: 20px;
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  --hover-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --hover-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --hover-transform: translateY(-5px);
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+
+  --side-nav-width: 250px;
+  --side-nav-collapsed: 70px;
+  --header-height: 70px;
+
+  --background-color-rgb: 255, 255, 255;
 }
 
 .dark-mode {
-    --primary-color: #a29bfe;
-    --primary-hover: #8983d8;
-    --secondary-color: #6c5ce7;
-    --accent-color: #00cec9;
-    --background-color: #1a1b2e;
-    --card-background: #252640;
-    --text-color: #e5e5e5;
-    --text-muted: #b2becd;
-    --border-color: rgba(255, 255, 255, 0.08);
-    --highlight-color: rgba(162, 155, 254, 0.2);
-    --shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    --hover-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    --background-color-rgb: 26, 27, 46;
+  --primary-color: #B98EFF;
+  --primary-hover: #8E54E9;
+  --secondary-color: #4B6CB7;
+  --accent-color: #8E54E9;
+  --background-color: #1a1b2e;
+  --card-background: #2a2e4d;
+  --text-color: #eaeaff;
+  --text-muted: #b2becd;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --highlight-color: rgba(185, 142, 255, 0.2);
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --hover-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --background-color-rgb: 26, 27, 46;
 }
+
 
 * {
     box-sizing: border-box;
