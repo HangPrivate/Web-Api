@@ -1,5 +1,5 @@
 module.exports = function app (app) {
-app.get('/imagecreator/brat', async (req, res) => {
+app.get('/tools/txt2qr', async (req, res) => {
         try {
             const { text } = req.query
             const pedo = await getBuffer(`https://api.siputzx.my.id/api/tools/text2qr?text=${text}`)
