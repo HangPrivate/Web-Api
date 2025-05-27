@@ -347,7 +347,16 @@
           "params": {
             "url": "Masukan Url Berformat png/jpg!"
           }
-        }, 
+        },
+         {
+          "name": "Sertifikat tolol",
+          "desc": "Sertifikat Tolol",
+          "path": "/imagecreator/sertifkat-tolol?text=",
+          "status": "Ready",
+          "params": {
+            "url": "Masukan Url Berformat png/jpg!"
+          }
+        },
         {
           "name": "Brat",
           "desc": "Brat text generator",
