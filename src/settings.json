@@ -548,6 +548,12 @@
           "desc": "Screenshot web url",
           "path": "/tools/ssweb?url=", 
           "status": "ready"
+        },
+         {
+          "name": "Text to qr",
+          "desc": "Text To Qr Code",
+          "path": "/tools/txt2qr?text=", 
+          "status": "ready"
         }, 
         {
           "name": "Emoji To Gif",
