@@ -86,19 +86,19 @@
         {
           "name": "Hot anime",
           "desc": "Hot anime (animedao)",
-          "path": "/anime/hot",
+          "path": "/anime/animedao/hot",
           "status": "ready"
         },
           {
           "name": "Latest anime",
           "desc": "Latest anime (animedao)",
-          "path": "/anime/latest",
+          "path": "/anime/animedao/latest",
           "status": "ready"
         },
         {
           "name": "Search anime",
           "desc": "Search anime (animedao)",
-          "path": "/anime/search?query=",
+          "path": "/anime/animedao/search?query=",
           "status": "ready",
           "params": {
             "query": "Masukan pertanyaan atau text"
