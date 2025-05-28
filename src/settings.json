@@ -376,14 +376,14 @@
           "desc": "Create qris payment", 
           "path": "/orderkuota/createpayment?apikey=&amount=&codeqr=", 
           "status": "ready",
-          "innerDesc": "Buy apikey >> wa.me/628386890336"
+          "innerDesc": "Buy apikey >> wa.me/6281292681130"
         },
         {
           "name": "Cek Status",
           "desc": "Cek status payment", 
           "path": "/orderkuota/cekstatus?apikey=&merchant=&keyorkut=", 
           "status": "ready",
-          "innerDesc": "Buy apikey >> wa.me/628386890336"          
+          "innerDesc": "Buy apikey >> wa.me/6281292681130"          
         }
       ]
     },
