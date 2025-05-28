@@ -15,7 +15,7 @@ async function searchAnime(query) {
 }
 
 module.exports = function(app) {
-  app.get('/anime/search', async (req, res) => {
+  app.get('/anime/animedao/search', async (req, res) => {
     try {
       const { query } = req.query;
       if (!query) {
