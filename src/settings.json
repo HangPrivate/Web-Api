@@ -84,7 +84,7 @@
       "name": "Anime",
       "items": [
         {
-          "name": "Hot anime",
+          "name": "Populer anime",
           "desc": "Hot anime (animedao)",
           "path": "/anime/animedao/hot",
           "status": "ready"
