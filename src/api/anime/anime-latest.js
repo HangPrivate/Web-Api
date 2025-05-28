@@ -19,7 +19,7 @@ async function getLatestAnime() {
 }
 
 module.exports = function(app) {
-  app.get('/anime/latest', async (req, res) => {
+  app.get('/anime/animedao/latest', async (req, res) => {
     try {
       const animeList = await getLatestAnime();
       res.status(200).json({ status: true, result: animeList });
