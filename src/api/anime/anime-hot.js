@@ -17,7 +17,7 @@ async function hotSeries() {
 }
 
 module.exports = function(app) {
-  app.get('/anime/hot', async (req, res) => {
+  app.get('/anime/animedao/hot', async (req, res) => {
     try {
       const result = await hotSeries();
       res.status(200).json({ status: true, result });
