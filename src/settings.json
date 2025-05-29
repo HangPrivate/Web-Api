@@ -23,16 +23,6 @@
             "text": "Text for luminai to respond to"
           }
         },
-       {
-          "name": "HydroMind",
-          "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
-          "path": "/ai/hydromind?text=&model=",
-          "status": "ready",
-          "params": {
-            "text": "Teks atau perintah untuk chat AI",
-            "model":"1See the list of supported AI models here: https://mind.hydrooo.web.id"
-          }
-         },
          {
           "name": "OpenAI",
           "desc": "openai chat",
@@ -68,25 +58,7 @@
           "params": {
             "text": "Masukan pertanyaan atau text"
           }
-        },
-         {
-          "name": "Claude",
-          "desc": "Claude AI",
-          "path": "/ai/claude?text=",
-          "status": "ready",
-          "params": {
-            "text": "Masukan pertanyaan atau text"
-          }
-        },
-       {
-          "name": "deepseek",
-          "desc": "deepseek AI",
-          "path": "/ai/deepseek?text=",
-          "status": "ready",
-          "params": {
-            "text": "Teks atau perintah untuk deepseek AI"
-          }
-         }   
+        }
       ]
     },
     {
