@@ -1,11 +1,11 @@
 const axios = require('axios');
 const { v4: uuidv4 } = require('uuid');
 
-async function qwenai(message, systemMessage, chatType) {
+async function qwenai(message, prompt, chatType = "t2t") {
     const model = 'qwen-max-latest';
 
     const messages = [
-        { role: 'system', content: systemMessage },
+        { role: 'system', content: prompt },
         { role: 'user', content: message }
     ];
 
@@ -51,25 +51,22 @@ async function qwenai(message, systemMessage, chatType) {
 }
 
 module.exports = function(app) {
-    app.get('/ai/qwen-max', async (req, res) => {
-        const { text, systemMessage, chatType, apikey } = req.query;
+    app.get('/ai/qwen', async (req, res) => {
+        const { text, prompt, apikey } = req.query;
 
         if (!global.apikey.includes(apikey)) {
             return res.json("Apikey tidak valid.");
         }
 
-        if (!text) {
+        if (!text || !prompt) {
             return res.status(400).json({
                 status: false,
-                error: '"text" parameter is required'
+                error: 'Parameter "text" dan "prompt" wajib diisi'
             });
         }
 
-        const finalSystemMessage = systemMessage || "Anda adalah asisten cerdas yang membantu pengguna dalam dunia digital. anda harus ber perilaku seperti manusia yang ramah dan anda harus mmenjawab semua pertanyaa dengan benar";
-        const finalChatType = chatType || "t2t";
-
         try {
-            const result = await qwenai(text, finalSystemMessage, finalChatType);
+            const result = await qwenai(text, prompt, chatType);
             res.status(200).json({ status: true, result });
         } catch (error) {
             res.status(500).json({ status: false, error: error.message });
