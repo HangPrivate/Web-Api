@@ -33,7 +33,7 @@
           }
         },
        {
-  "name": "QWEN AI",
+  "name": "QWEN AI PRO",
   "desc": "Model: qwen-max-latest.",
   "path": "/ai/qwen-max?apikey=&text=&prompt=",
   "status": "ready",
