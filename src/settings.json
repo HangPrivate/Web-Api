@@ -23,6 +23,15 @@
             "text": "Text for luminai to respond to"
           }
         },
+         {
+          "name": "QwenAI",
+          "desc": "Model: qwen3-32b",
+          "path": "/ai/openai?text=",
+          "status": "ready",
+          "params": {
+            "text": "Masukan pertanyaan atau text"
+          }
+        },
        {
   "name": "QWEN AI PRO",
   "desc": "Model: qwen-max-latest.",
