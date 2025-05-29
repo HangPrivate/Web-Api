@@ -66,7 +66,7 @@ module.exports = function(app) {
         }
 
         try {
-            const result = await qwenai(text, prompt, chatType);
+            const result = await qwenai(text, prompt);
             res.status(200).json({ status: true, result });
         } catch (error) {
             res.status(500).json({ status: false, error: error.message });
