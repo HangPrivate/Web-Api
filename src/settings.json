@@ -23,15 +23,6 @@
             "text": "Text for luminai to respond to"
           }
         },
-         {
-          "name": "Qwen AI",
-          "desc": "MODEL: qwen3-32b",
-          "path": "/ai/qwen?text=",
-          "status": "ready",
-          "params": {
-            "text": "Masukan pertanyaan atau text"
-          }
-        },
        {
   "name": "QWEN AI PRO",
   "desc": "Model: qwen-max-latest.",
@@ -69,22 +60,7 @@
           "desc": "Hot anime (animedao)",
           "path": "/anime/animedao/hot",
           "status": "ready"
-        },
-          {
-          "name": "Latest anime",
-          "desc": "Latest anime (animedao)",
-          "path": "/anime/animedao/latest",
-          "status": "ready"
-        },
-        {
-          "name": "Search anime",
-          "desc": "Search anime (animedao)",
-          "path": "/anime/animedao/search?query=",
-          "status": "ready",
-          "params": {
-            "query": "Masukan pertanyaan atau text"
-          }
-        },
+        }
       ]
     },
      {
