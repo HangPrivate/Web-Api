@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require('uuid');
 
 async function qwenai(message, systemMessage) {
     const model = 'qwen-turbo-2025-02-11';
-    const chatType = 't2t';
+    const chatType = 'search';
 
     const messages = [{ role: 'user', content: message }];
     if (systemMessage) {
