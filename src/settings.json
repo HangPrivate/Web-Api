@@ -43,6 +43,15 @@
           }
         },
         {
+          "name": "QWEN AI",
+          "desc": "qwen-turbo-2025-02-11",
+          "path": "/ai/qwen?text=&systemMessage=",
+          "status": "ready",
+          "params": {
+            "text": "Teks atau perintah untuk AI"
+          }
+         }  
+        {
           "name": "VeniceAi",
           "desc": "Venice AI",
           "path": "/ai/venicechat?text=",
