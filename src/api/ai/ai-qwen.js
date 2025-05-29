@@ -51,7 +51,7 @@ async function qwenai(message, prompt, chatType = "t2t") {
 }
 
 module.exports = function(app) {
-    app.get('/ai/qwen', async (req, res) => {
+    app.get('/ai/qwen-max', async (req, res) => {
         const { text, prompt, apikey } = req.query;
 
         if (!global.apikey.includes(apikey)) {
