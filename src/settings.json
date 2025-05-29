@@ -50,7 +50,7 @@
           "params": {
             "text": "Teks atau perintah untuk AI"
           }
-         }  
+         }, 
         {
           "name": "VeniceAi",
           "desc": "Venice AI",
