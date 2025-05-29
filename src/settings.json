@@ -24,9 +24,9 @@
           }
         },
          {
-          "name": "OpenAI",
-          "desc": "openai chat",
-          "path": "/ai/openai?text=",
+          "name": "Qwen AI",
+          "desc": "MODEL: qwen3-32b",
+          "path": "/ai/qwen?text=",
           "status": "ready",
           "params": {
             "text": "Masukan pertanyaan atau text"
@@ -84,7 +84,40 @@
           "params": {
             "query": "Masukan pertanyaan atau text"
           }
-        }                   
+        },
+  {
+    "name": "OnGoing Anime",
+    "desc": "onGoing anime (otakudesu)",
+    "path": "/anime/otakudesu/ongoing",
+    "status": "ready"
+  },
+  {
+    "name": "Search Anime",
+    "desc": "Search anime (otakudesu)",
+    "path": "/anime/otakudesu/animesearch?query=",
+    "status": "ready",
+    "params": {
+      "query": "Masukkan kata kunci pencarian anime"
+    }
+  },
+  {
+    "name": "Anime Detail",
+    "desc": "Get anime detail by URL (otakudesu)",
+    "path": "/anime/otakudesu/animedetail?url=",
+    "status": "ready",
+    "params": {
+      "url": "Masukkan URL detail anime dari otakudesu"
+    }
+  },
+  {
+    "name": "Download Anime",
+    "desc": "Get download links for anime episode (otakudesu)",
+    "path": "/anime/otakudesu/downloadanime?url=",
+    "status": "ready",
+    "params": {
+      "url": "Masukkan URL episode dari otakudesu"
+    }
+  }
       ]
     },
      {
