@@ -34,13 +34,11 @@
         },
        {
   "name": "QWEN AI",
-  "desc": "Model: qwen-max-latest. systemMessage dan chatType opsional.",
-  "path": "/ai/qwen-max?text=&systemMessage=&chatType=",
+  "desc": "Model: qwen-max-latest.",
+  "path": "/ai/qwen-max?apikey=&text=&prompt=",
   "status": "ready",
   "params": {
-    "text": "Teks atau perintah untuk AI (wajib)",
-    "systemMessage": "Instruksi sistem untuk AI (opsional, default: Anda adalah asisten cerdas yang membantu pengguna.)",
-    "chatType": "Jenis chat seperti t2t, search (opsional, default: t2t)"
+    "text": "Teks atau perintah untuk AI (wajib)"
   }
 },
         {
