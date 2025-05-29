@@ -32,15 +32,17 @@
             "text": "Masukan pertanyaan atau text"
           }
         },
-        {
-          "name": "QWEN AI",
-          "desc": "Model:qwen-turbo-2025-02-11",
-          "path": "/ai/qwen?text=&systemMessage=",
-          "status": "ready",
-          "params": {
-            "text": "Teks atau perintah untuk AI"
-          }
-         }, 
+       {
+  "name": "QWEN AI",
+  "desc": "Model: qwen-max-latest. systemMessage dan chatType opsional.",
+  "path": "/ai/qwen-max?text=&systemMessage=&chatType=",
+  "status": "ready",
+  "params": {
+    "text": "Teks atau perintah untuk AI (wajib)",
+    "systemMessage": "Instruksi sistem untuk AI (opsional, default: Anda adalah asisten cerdas yang membantu pengguna.)",
+    "chatType": "Jenis chat seperti t2t, search (opsional, default: t2t)"
+  }
+},
         {
           "name": "VeniceAi",
           "desc": "Venice AI",
