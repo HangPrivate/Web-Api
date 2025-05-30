@@ -26,7 +26,7 @@
          {
           "name": "QwenAI",
           "desc": "Model: qwen3-32b",
-          "path": "/ai/openai?text=",
+          "path": "/ai/qwen?text=",
           "status": "ready",
           "params": {
             "text": "Masukan pertanyaan atau text"
