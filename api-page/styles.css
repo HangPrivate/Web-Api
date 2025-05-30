@@ -1,18 +1,20 @@
 :root {
-  --primary-color: #4B6CB7;
-  --primary-hover: #3B4781;
-  --secondary-color: #B98EFF;
-  --accent-color: #8E54E9;
-  --success-color: #00b894;
-  --error-color: #ff7675;
-  --warning-color: #fdcb6e;
-
-  --background-color: #ffffff;
-  --card-background: #f4f6ff;
-  --text-color: #1a1a2e;
-  --text-muted: #666f8a;
-  --border-color: rgba(0, 0, 0, 0.08);
-  --highlight-color: rgba(75, 108, 183, 0.15);
+    /* Color Palette - Purple Gradient Theme */
+    --primary-color: #6c5ce7;
+    --primary-hover: #5649d1;
+    --secondary-color: #a29bfe;
+    --accent-color: #00cec9;
+    --success-color: #00b894;
+    --error-color: #ff7675;
+    --warning-color: #fdcb6e;
+    
+    /* Light Mode */
+    --background-color: #f8f9fd;
+    --card-background: #ffffff;
+    --text-color: #2d3436;
+    --text-muted: #636e72;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --highlight-color: rgba(108, 92, 231, 0.1);
 
   --border-radius-sm: 8px;
   --border-radius: 12px;
