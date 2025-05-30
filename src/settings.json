@@ -509,6 +509,12 @@
           "desc": "Stalk Instagram account",
           "path": "/stalk/instagram?user=",
           "status": "ready"
+        },
+          {
+          "name": "Freefire Stalk",
+          "desc": "Stalk Freefire account",
+          "path": "/stalk/ffstalk?id=",
+          "status": "ready"
         }, 
         {
           "name": "Github Stalk",
