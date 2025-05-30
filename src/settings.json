@@ -586,7 +586,16 @@
           "desc": "Emoji mix converter",
           "path": "/tools/emojimix?emoji1=&emoji2=",
           "status": "ready"
-        }                      
+        },
+         {
+           "name": "Save website to ZIP",
+          "desc": "Web 2 ZIP",
+          "path": "/tools/saveweb2zip?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url Yang Valid!"
+          }
+        }       
       ]
     },
     {
