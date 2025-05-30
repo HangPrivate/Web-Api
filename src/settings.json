@@ -569,6 +569,12 @@
           "path": "/tools/txt2qr?text=", 
           "status": "ready"
         }, 
+          {
+          "name": "Data BMKG",
+          "desc": "Data gempa bmkg",
+          "path": "/tools/bmkg/gempa",
+          "status": "ready"
+        },
         {
           "name": "Emoji To Gif",
           "desc": "Convert emoji to gif",
