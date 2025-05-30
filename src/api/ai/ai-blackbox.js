@@ -1,60 +1,62 @@
-const axios = require("axios");
+const axios = require('axios');
 
+// Ambil token validated dari halaman Blackbox
+async function getValidatedToken() {
+  try {
+    const { data: html } = await axios.get('https://www.blackbox.ai', {
+      headers: {
+        'User-Agent': 'Mozilla/5.0'
+      }
+    });
+
+    const match = html.match(/validated["']?\s*:\s*["']([a-z0-9-]{36})["']/i);
+    return match?.[1] || null;
+  } catch (err) {
+    console.error('Gagal ambil token validated:', err.message);
+    return null;
+  }
+}
+
+// Fungsi Blackbox AI utama
 async function blackboxAi(query) {
-  const headers = {
-    'Accept': '*/*',
-    'Content-Type': 'application/json',
-    'Origin': 'https://www.blackbox.ai',
-    'Referer': 'https://www.blackbox.ai/',
-    'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
-  };
+  const validated = await getValidatedToken();
+  if (!validated) throw new Error('Gagal mengambil token validated');
 
   const payload = {
     messages: [{ role: 'user', content: query, id: '0quFtyH' }],
     id: 'KB5EUHk',
+    validated,
     codeModelMode: true,
-    mobileClient: false,
-    validated: '00f37b34-a166-4efb-bce5-1312d87f2f94',
-    webSearchModeOption: {
-      autoMode: true,
-      webMode: false,
-      offlineMode: false
-    }
+    asyncMode: false,
+    imageGenerationMode: false
   };
 
-  const { data } = await axios.post('https://www.blackbox.ai/api/chat', payload, {
-    headers,
-    timeout: 10000
-  });
+   const headers = {
+    'Accept': '/',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'id-ID,id;q=0.9',
+    'Content-Type': 'application/json',
+    'Origin': 'https://www.blackbox.ai',
+    'Referer': 'https://www.blackbox.ai/',
+    'Sec-Ch-Ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+    'Sec-Ch-Ua-Mobile': '?1',
+    'Sec-Ch-Ua-Platform': '"Android"',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'same-origin',
+    'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36'
+  };
 
+  const { data } = await axios.post('https://www.blackbox.ai/api/chat', payload, { headers });
   const parsed = data.split('$~~~$');
-  
-  try {
-    if (parsed.length === 1) {
-      return {
-        response: parsed[0].trim(),
-        source: []
-      };
-    } else if (parsed.length >= 3) {
-      const resultText = parsed[2].trim();
-      const resultSources = JSON.parse(parsed[1]);
-      return {
-        response: resultText,
-        source: resultSources.map(s => ({
-          link: s.link,
-          title: s.title,
-          snippet: s.snippet,
-          position: s.position
-        }))
-      };
-    } else {
-      throw new Error("Response format tidak dikenali.");
-    }
-  } catch (err) {
-    throw new Error("Gagal parsing response dari Blackbox.");
-  }
+
+  return {
+    response: parsed[2]?.trim() || parsed[0]?.trim() || 'Tidak ada jawaban.',
+    source: parsed[1] ? JSON.parse(parsed[1]) : []
+  };
 }
 
+// Export router Express
 module.exports = function (app) {
   app.get('/ai/blackbox', async (req, res) => {
     const { q } = req.query;
@@ -67,16 +69,12 @@ module.exports = function (app) {
     }
 
     try {
-      const results = await blackboxAi(q);
-      res.status(200).json({
-        status: true,
-        result: results
-      });
-    } catch (error) {
-      console.error("Blackbox Error:", error.message);
+      const result = await blackboxAi(q);
+      res.status(200).json({ status: true, result });
+    } catch (err) {
       res.status(500).json({
         status: false,
-        message: `Gagal memproses permintaan: ${error.message}`
+        message: `Gagal memproses permintaan: ${err.message}`
       });
     }
   });
