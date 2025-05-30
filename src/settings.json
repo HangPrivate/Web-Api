@@ -32,6 +32,15 @@
             "text": "Masukan pertanyaan atau text"
           }
         },
+         {
+          "name": "Code-Generator AI",
+          "desc": "Membuat codingan Menggunakan AI",
+          "path": "/ai/code-generator?prompt=&language=",
+          "status": "ready",
+          "params": {
+            "prompt": "Masukan pertanyaan atau text"
+          }
+        },
        {
          "name": "QWEN AI PRO",
          "desc": "Model: qwen-max-latest.",
@@ -515,7 +524,13 @@
           "desc": "Stalk github account",
           "path": "/stalk/github?user=",
           "status": "ready"
-        },        
+        },
+         {
+          "name": "Free Fire Stalk",
+          "desc": "Stalk freefire account",
+          "path": "/stalk/freefire?id=",
+          "status": "ready"
+        },     
         {
           "name": "Tiktok Stalk",
           "desc": "Stalk tiktok account",
