@@ -33,14 +33,14 @@
           }
         },
        {
-  "name": "QWEN AI PRO",
-  "desc": "Model: qwen-max-latest.",
-  "path": "/ai/qwen-max?apikey=&text=&prompt=",
-  "status": "ready",
-  "params": {
-    "text": "Teks atau perintah untuk AI (wajib)"
-  }
-},
+         "name": "QWEN AI PRO",
+         "desc": "Model: qwen-max-latest.",
+         "path": "/ai/qwen-max?apikey=&text=&prompt=",
+         "status": "ready",
+         "params": {
+         "text": "Teks atau perintah untuk AI (wajib)"
+       }
+     },
         {
           "name": "VeniceAi",
           "desc": "Venice AI",
@@ -86,38 +86,26 @@
           }
         },
          {
-          "name": "OnGoing anime",
-          "desc": "On-Going anime (otakudesu)",
+          "name": "Upcoming anime",
+          "desc": "Up-Coming anime (nontonanime)",
           "path": "/nontonanime/upcoming",
           "status": "ready"
         },
            {
           "name": "Anime Search",
-          "desc": "Search anime (otakudesu)",
+          "desc": "Search anime (nontonanime)",
           "path": "/nontonanime/search?q=",
           "status": "ready",
           "params": {
             "query": "Masukan pertanyaan atau text"
           }
         },
-          {
-          "name": "Anime Detail",
-          "desc": "Detail Anime (otakudesu)",
-          "path": "/anime/otakudesu/animedetail?url=",
-          "status": "ready",
-          "params": {
-            "url": "Masukan Url"
-          }
-        }, 
-          {
-          "name": "Download Anime",
-          "desc": "Anime Downloader (otakudesu)",
-          "path": "/nontonanime/download?url=",
-          "status": "ready",
-          "params": {
-            "url": "Masukan Url"
-          }
-        }    
+                 {
+          "name": "Latest anime",
+          "desc": "Latest anime (nontonanime)",
+          "path": "/nontonanime/latest",
+          "status": "ready"
+        }  
       ]
     },
      {
