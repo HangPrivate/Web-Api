@@ -88,13 +88,13 @@
          {
           "name": "OnGoing anime",
           "desc": "On-Going anime (otakudesu)",
-          "path": "/anime/otakudesu/ongoing",
+          "path": "/nontonanime/upcoming",
           "status": "ready"
         },
            {
           "name": "Anime Search",
           "desc": "Search anime (otakudesu)",
-          "path": "/anime/otakudesu/animesearch?query=",
+          "path": "/nontonanime/search?q=",
           "status": "ready",
           "params": {
             "query": "Masukan pertanyaan atau text"
@@ -112,7 +112,7 @@
           {
           "name": "Download Anime",
           "desc": "Anime Downloader (otakudesu)",
-          "path": "/anime/otakudesu/downloadanime?url=",
+          "path": "/nontonanime/download?url=",
           "status": "ready",
           "params": {
             "url": "Masukan Url"
