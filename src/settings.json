@@ -84,7 +84,40 @@
           "params": {
             "query": "Masukan pertanyaan atau text"
           }
-        }
+        },
+         {
+          "name": "OnGoing anime",
+          "desc": "On-Going anime (otakudesu)",
+          "path": "/anime/otakudesu/ongoing",
+          "status": "ready"
+        },
+           {
+          "name": "Anime Search",
+          "desc": "Search anime (otakudesu)",
+          "path": "/anime/otakudesu/animesearch?query=",
+          "status": "ready",
+          "params": {
+            "query": "Masukan pertanyaan atau text"
+          }
+        },
+          {
+          "name": "Anime Detail",
+          "desc": "Detail Anime (otakudesu)",
+          "path": "/anime/otakudesu/animedetail?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url"
+          }
+        }, 
+          {
+          "name": "Download Anime",
+          "desc": "Anime Downloader (otakudesu)",
+          "path": "/anime/otakudesu/downloadanime?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan Url"
+          }
+        }    
       ]
     },
      {
