@@ -513,7 +513,7 @@
           {
           "name": "Freefire Stalk",
           "desc": "Stalk Freefire account",
-          "path": "/stalk/ffstalk?id=",
+          "path": "/stalk/ffstalk?playerId=",
           "status": "ready"
         }, 
         {
