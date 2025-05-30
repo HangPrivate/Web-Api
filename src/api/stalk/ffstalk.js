@@ -39,7 +39,7 @@ async function ffstalk(playerId) {
 
 module.exports = function (app) {
   // Endpoint untuk FF Stalk (Free Fire Player Info)
-  app.get('/stalk/ffstalk', async (req, res) => {
+  app.get('/stalk/freefire', async (req, res) => {
     const { id } = req.query;
     
     if (!id) {
