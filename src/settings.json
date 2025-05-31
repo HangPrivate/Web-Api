@@ -33,6 +33,16 @@
             "ratio": "Aspect ratio of the image. Options: 1:1, 3:4, 4:3, 16:9, 9:16"
          }
      },
+        {
+  "name": "QwenVideo",
+  "desc": "Generate video using Qwen AI (text to video)",
+  "path": "/ai/qwen-video?prompt=&ratio=",
+  "status": "ready",
+  "params": {
+    "prompt": "Text prompt to generate the video",
+    "ratio": "Aspect ratio of the video. Options: 1:1, 3:4, 4:3, 16:9, 9:16"
+  }
+},
       {
           "name": "QwenAI",
           "desc": "Model: qwen3-32b",
