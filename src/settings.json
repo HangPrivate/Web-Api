@@ -23,6 +23,15 @@
             "text": "Text for luminai to respond to"
           }
         },
+          {
+          "name": "OPEN AI",
+          "desc": "Talk with Open AI",
+          "path": "/ai/openai?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for luminai to respond to"
+          }
+        },
         {
           "name": "QwenImage",
           "desc": "Generate image using Qwen AI (text to image)",
