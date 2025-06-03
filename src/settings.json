@@ -463,12 +463,6 @@
           "status": "ready"
         }, 
         {
-          "name": "Pinterest",
-          "desc": "Search foto pinterest",
-          "path": "/search/pinterest?q=",
-          "status": "ready"
-        }, 
-        {
           "name": "Google Image",
           "desc": "Search foto google",
           "path": "/search/gimage?q=",
@@ -486,12 +480,6 @@
           "path": "/search/npm?q=",
           "status": "ready"
         },        
-        {
-          "name": "Fdroid",
-          "desc": "Search apk fdroid",
-          "path": "/search/fdroid?q=",
-          "status": "ready"
-        },    
         {
           "name": "Happymod",
           "desc": "Search apk happymod",
