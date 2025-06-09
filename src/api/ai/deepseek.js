@@ -60,10 +60,6 @@ module.exports = function(app) {
                 return res.status(400).json({ status: false, error: 'Parameter "prompt" wajib diisi.' });
             }
 
-            if (!global.apikey.includes(apikey)) {
-                return res.status(401).json({ status: false, error: 'Apikey tidak valid.' });
-            }
-
             const response = await fetchDeepSeekChat(prompt);
 
             res.status(200).json({
