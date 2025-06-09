@@ -54,7 +54,7 @@ module.exports = function(app) {
 
     app.get('/ai/deepseek', async (req, res) => {
         try {
-            const { prompt, apikey } = req.query;
+            const { prompt } = req.query;
 
             if (!prompt) {
                 return res.status(400).json({ status: false, error: 'Parameter "prompt" wajib diisi.' });
