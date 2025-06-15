@@ -10,14 +10,13 @@ module.exports = function (app) {
 
       const stockData = {};
 
-      // Helper function
+      // Helper function tanpa image
       const extractSection = (key, selector) => {
         stockData[key] = [];
         $(selector).each((i, el) => {
           stockData[key].push({
             name: $(el).find('.item-name').text().trim(),
-            quantity: $(el).find('.item-quantity').text().trim(),
-            image: $(el).find('.item-image img').attr('src')
+            quantity: $(el).find('.item-quantity').text().trim()
           });
         });
       };
