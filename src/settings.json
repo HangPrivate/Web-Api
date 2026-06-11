@@ -134,7 +134,61 @@
           "desc": "Latest anime (nontonanime)",
           "path": "/nontonanime/latest",
           "status": "ready"
-        }  
+        },
+        {
+  "name": "Home Anime",
+  "desc": "Home anime (hang)",
+  "path": "/hang/home",
+  "status": "ready"
+},
+{
+  "name": "Anime Schedule",
+  "desc": "Anime schedule (hang)",
+  "path": "/hang/schedule",
+  "status": "ready"
+},
+{
+  "name": "Search Anime",
+  "desc": "Search anime (hang)",
+  "path": "/hang/search?query=",
+  "status": "ready",
+  "params": {
+    "query": "Masukan judul anime"
+  }
+},
+{
+  "name": "Anime Detail",
+  "desc": "Detail anime (hang)",
+  "path": "/hang/anime?slug=",
+  "status": "ready",
+  "params": {
+    "slug": "Masukan slug anime"
+  }
+},
+{
+  "name": "Unlimited Anime",
+  "desc": "Anime list A-Z (hang)",
+  "path": "/hang/unlimited",
+  "status": "ready"
+},
+{
+  "name": "Episode Detail",
+  "desc": "Detail episode anime (hang)",
+  "path": "/hang/episode?episodeId=",
+  "status": "ready",
+  "params": {
+    "episodeId": "Masukan episodeId"
+  }
+},
+{
+  "name": "Streaming Server",
+  "desc": "Streaming server anime (hang)",
+  "path": "/hang/server?serverId=",
+  "status": "ready",
+  "params": {
+    "serverId": "Masukan serverId"
+  }
+}
       ]
     },
      {
